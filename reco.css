@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #deb2f1;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* Estilo de las imágenes */
+.images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.drag-item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.drag-item:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo de las zonas de drop */
+.zones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.drop-zone {
+    width: 120px;
+    height: 120px;
+    border: 2px dashed #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    background-color: #bcdc7f;
+    transition: background-color 0.2s ease;
+    border-radius: 10px;
+}
+
+.drop-zone.correct {
+    background-color: #d3ffd3;
+    border-color: #4CAF50;
+}
+
+.drop-zone.incorrect {
+    background-color: #ffcccc;
+    border-color: #f44336;
+}
+.page-title {
+    text-align: center;      
+    font-size: 1.5rem;      
+    font-weight: bold;       
+    margin-bottom: 30px;     
+    color: #0c0c0c;           
+}
+.drop-zone {
+    width: 120px;
+    height: 150px; /* Incrementamos el tamaño de la zona */
+    border: 2px dashed #888;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    background-color: #e0e0e0;
+    transition: background-color 0.2s ease;
+    border-radius: 10px;
+}
+
+.drop-zone.correct {
+    background-color: #d3ffd3;
+    border-color: #4CAF50;
+}
+
+.drop-zone.incorrect {
+    background-color: #ffcccc;
+    border-color: #f44336;
+}
+
+.drop-zone img {
+    margin-bottom: 10px; /* Deja espacio entre la imagen y el texto */
+}
+
+.drop-zone span {
+    margin-top: 10px; /* Espacio entre la imagen y el texto cuando se coloca en la zona */
+    font-weight: bold;
+    font-size: 16px;
+}
+.congratulations-message {
+    display: none;  /* Oculto por defecto */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: green;
+    padding: 20px;
+    background-color: #0e0e0e;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    margin-top: 30px;
+}

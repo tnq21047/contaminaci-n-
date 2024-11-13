@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego resicla</title>
+    <link rel="stylesheet" href="reco.css">
+</head>
+<body>
+
+    <h1 class="page-title">¡Coloca la basura 
+        donde corresponde!</h1>
+
+    <div class="game-container">
+        <div class="images">
+            <img src="img/plastic.jpg" id="img1" class="drag-item" draggable="true" alt="Imagen 1">
+            <img src="img/paper.jpg" id="img2" class="drag-item" draggable="true" alt="Imagen 2">
+            <img src="img/glass.jpg" id="img3" class="drag-item" draggable="true" alt="Imagen 3">
+            <img src="img/5d9c0485257477dd69840c681b5a5b77.jpg" id="img4" class="drag-item" draggable="true" alt="Imagen 4">
+            <img src="img/40b63bd33869c819e952171444854bf9.jpg" id="img5" class="drag-item" draggable="true" alt="Imagen 5">
+        </div>
+
+        <div class="zones">
+            <div class="drop-zone" id="zone1" data-target="img1">plastico</div>
+            <div class="drop-zone" id="zone2" data-target="img2">papel</div>
+            <div class="drop-zone" id="zone3" data-target="img3">vidrio</div>
+            <div class="drop-zone" id="zone4" data-target="img4">organico</div>
+            <div class="drop-zone" id="zone5" data-target="img5">metal</div>
+        </div>
+    
+    
+    </div>
+    <div id="congratulations" class="congratulations-message">
+        ¡Felicidades! Has colocado todas las imágenes en su lugar.
+    </div>
+</div>
+    <script src="resco.js"></script>
+</body>
+</html>
